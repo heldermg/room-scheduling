@@ -1,12 +1,13 @@
-import { Component, Input, OnInit } from 'angular2/core';
-import { Router } from 'angular2/router';
+import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
 import { Room } from './room';
 import { RoomService } from './room.service';
 
 @Component({
     selector: 'room-add',
-    templateUrl: 'app/room/room-add.component.html'
-    /*styleUrls: ['app/room/room-detail.component.css']*/
+    templateUrl: 'app/room/room-add.component.html',
+    styleUrls: ['app/room/room-add.component.css']
 })
 
 export class RoomAddComponent implements OnInit {

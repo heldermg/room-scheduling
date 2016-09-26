@@ -1,13 +1,12 @@
-import { Component, Input, OnInit } from 'angular2/core';
-import { RouteParams } from 'angular2/router';
-import { Router } from 'angular2/router';
+import { Component, Input, OnInit } from '@angular/core';
+import { RouteParams } from '@angular/router';
+import { Router } from '@angular/router';
 import { Room } from './room';
 import { RoomService } from './room.service';
-import { BookingListComponent } from '../booking/booking-list.component';
+//import { BookingListComponent } from '../booking/booking-list.component';
 
 @Component({
   selector: 'room-detail',
-  directives: [BookingListComponent],
   templateUrl: 'app/room/room-detail.component.html',
   styleUrls: ['app/room/room-detail.component.css']
 })

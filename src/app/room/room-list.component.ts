@@ -1,5 +1,6 @@
-import { Component, OnInit } from 'angular2/core';
-import { Router } from 'angular2/router';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
 import { Room } from './room';
 import { RoomDetailComponent } from './room-detail.component';
 import { RoomService } from './room.service';
@@ -7,8 +8,7 @@ import { RoomService } from './room.service';
 @Component({
     selector: 'room-list',
     templateUrl: 'app/room/room-list.component.html',
-    styleUrls: ['app/room/room-list.component.css'],
-    directives: [RoomDetailComponent]
+    styleUrls: ['app/room/room-list.component.css']
 })
 
 export class RoomListComponent implements OnInit {
