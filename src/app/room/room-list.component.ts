@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 import { Room } from './room';
-import { RoomDetailComponent } from './room-detail.component';
 import { RoomService } from './room.service';
 
 @Component({
@@ -29,10 +28,10 @@ export class RoomListComponent implements OnInit {
     }
 
     gotoDetail(room: Room) {
-        this._router.navigate(['RoomDetail', { id: room.id }]);
+        this._router.navigate(['/room/detail', room.id ]);
     }
 
     gotoAdd() {
-        this._router.navigate(['RoomAdd']);
+        this._router.navigate(['/room/add']);
     }
 }
